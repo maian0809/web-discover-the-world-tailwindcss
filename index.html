@@ -1,0 +1,900 @@
+<!DOCTYPE html>
+<html lang="en" class="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover The World</title>
+    <link rel="icon" type="image/x-icon" href="src/assets/images/favicon/world.png">
+    <link rel="stylesheet" href="src/assets/css/output.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <!-- navigation bar -->
+    <div class="sticky top-0 z-50">
+        <nav class="navbar absolute right-0 left-0 z-10 transparent-nav">
+            <div class="w-11/12 lg:w-10/12 xl:w-8/12 mx-auto py-5 flex justify-between items-center font-comf">
+                <div>
+                    <a href="#" class="text-sm lg:text-3xl font-mono">Cosmos Co.</a>
+                </div>
+                <div>
+                    <button
+                        class="text-sm py-3 px-4 rounded-md border border-amber-500 bg-transparent hover:bg-amber-500 text-amber-500 hover:text-white transition-all">
+                        Add listing
+                    </button>
+                </div>
+                <div class="space-x-4">
+                    <button class="text-sm lg:text-lg">Sign In</button>
+                    <button class="text-sm lg:text-lg">Sign Up</button>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- hero banner -->
+    <div class="relative h-screen bg-cover bg-center" style="background-image: url('src/assets/images/hero/hero-1.jpg');">
+        <!-- <img src="./src/assets/images/hero/hero-1.jpg" class="h-full w-full object-cover" alt=""> -->
+        <div class="absolute inset-0 bg-black/50"></div>
+        <div class="absolute inset-0 h-full w-full">
+            <div class="flex min-h-full w-full items-center justify-center">
+                <div class="space-y-6">
+                    <div class="text-white text-center hero-header">
+                        <p class="text-2xl lg:text-4xl capitalize font-bold mb-4 font-comf">Discover places that people love</p>
+                        <p class="text-lg w-8/12 mx-auto">We will help you to find the best places in the word</p>
+                    </div>
+                    <div class="flex flex-col lg:flex-row items-center justify-center gap-5">
+                        <div>
+                            <input type="text" placeholder="Location"
+                                class="rounded-md w-80 bg-white dark:bg-gray-800 text-gray-600 dark:text-gray-100 py-3 px-4 focus:outline-none">
+                        </div>
+                        <div>
+                            <input type="text" placeholder="I'm looking for ..."
+                                class="rounded-md w-80 bg-white dark:bg-gray-800 text-gray-600 dark:text-gray-100 py-3 px-4 focus:outline-none">
+                        </div>
+                        <div>
+                            <button class="rounded-md py-2 lg:py-2.5 p-4 lg:px-6 bg-amber-500 text-lg text-white hover:bg-amber-600">
+                                Search
+                            </button>
+                        </div>
+                    </div>
+                    <div class="w-10/12 mx-auto">
+                        <ul class="flex flex-wrap gap-5 justify-center text-sm text-white">
+                            <li class="capitalize">
+                                <a href="#" class="hover:text-amber-500">
+                                    <span
+                                        class="material-icons align-middle hidden md:inline-flex">restaurant_menu</span>
+                                    Restaurants
+                                </a>
+                            </li>
+                            <li class="capitalize">
+                                <a href="#" class="hover:text-amber-500">
+                                    <span class="material-icons align-middle hidden md:inline-flex">local_cafe</span>
+                                    cafe
+                                </a>
+                            </li>
+                            <li class="capitalize">
+                                <a href="#" class="hover:text-amber-500">
+                                    <span
+                                        class="material-icons align-middle hidden md:inline-flex">fitness_center</span>
+                                    gym
+                                </a>
+                            </li>
+                            <li class="capitalize">
+                                <a href="#" class="hover:text-amber-500">
+                                    <span class="material-icons align-middle hidden md:inline-flex">medication</span>
+                                    hospital
+                                </a>
+                            </li>
+                            <li class="capitalize">
+                                <a href="#" class="hover:text-amber-500">
+                                    <span class="material-icons align-middle hidden md:inline-flex">school</span>
+                                    school
+                                </a>
+                            </li>
+                            <li class="capitalize">
+                                <a href="#" class="hover:text-amber-500">
+                                    <span class="material-icons align-middle hidden md:inline-flex">shopping_cart</span>
+                                    shopping
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- body -->
+    <div class="dark:divide-y dark:divine-gray-700">
+        <!-- popular places -->
+        <div class="bg-gray-50 dark:bg-gray-800 py-32">
+            <div class="w-8/12 md:w-10/12 lg:w-8/12 mx-auto">
+                <div class="text-center mb-12">
+                    <p class="text-4xl font-bold text-gray-600 dark:text-gray-100">Popular Places</p>
+                    <p class="text-gray-600 dark:text-gray-100">Discover Most Searched Place</p>
+                </div>
+                <div class="">
+                    <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 mx-auto">
+                        <!-- card -->
+                        <div class="bg-white dark:bg-gray-800 rounded-md shadow max-w-xl overflow-hidden">
+                            <div>
+                                <img src="src/assets/images/pho.jpg" alt="" class="w-full h-60 object-cover">
+                            </div>
+                            <div class="px-6 py-4 space-y-2">
+                                <!-- stars -->
+                                <div class="flex items-center text-sm">
+                                    <span class="material-icons text-amber-400">grade</span>
+                                    <span class="material-icons text-amber-400">grade</span>
+                                    <span class="material-icons text-amber-400">grade</span>
+                                    <span class="material-icons text-amber-400">grade</span>
+                                    <span class="material-icons text-amber-400">star_half</span>
+                                    <span class="ml-2 text-xs text-gray-600 dark:text-gray-100">110 reviews</span>
+                                </div>
+                                <p class="text-lg font-bold text-gray-600 dark:text-gray-100">
+                                    Hai The Pho
+                                </p>
+                                <p class="text-sm text-gray-600 dark:text-gray-100">
+                                    <span class="material-icons align-middle text-gray-500 -ml-1">place</span>
+                                    Viet Nam
+                                </p>
+                                <div>
+                                    <span
+                                        class="text-xs px-2 py-0 5 bg-amber-100 border border-amber-200 text-amber-700 rounded-full">food</span>
+                                    <span
+                                        class="text-xs px-2 py-0 5 bg-amber-100 border border-amber-200 text-amber-700 rounded-full">vietnam</span>
+                                    <span
+                                        class="text-xs px-2 py-0 5 bg-amber-100 border border-amber-200 text-amber-700 rounded-full">culture</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- card -->
+                        <div class="bg-white dark:bg-gray-800 rounded-md shadow max-w-xl overflow-hidden">
+                            <div>
+                                <img src="src/assets/images/ramen.jpg" alt="" class="w-full h-60 object-cover backdrop-filter backdrop-blur">
+                            </div>
+                            <div class="px-6 py-4 space-y-2">
+                                <!-- stars -->
+                                <div class="flex items-center text-sm">
+                                    <span class="material-icons text-amber-400">grade</span>
+                                    <span class="material-icons text-amber-400">grade</span>
+                                    <span class="material-icons text-amber-400">grade</span>
+                                    <span class="material-icons text-amber-400">grade</span>
+                                    <span class="material-icons text-amber-400">star_half</span>
+                                    <span class="ml-2 text-xs text-gray-600 dark:text-gray-100">450 reviews</span>
+                                </div>
+                                <p class="text-lg font-bold text-gray-600 dark:text-gray-100">
+                                    Naruto Ramen
+                                </p>
+                                <p class="text-sm text-gray-600 dark:text-gray-100">
+                                    <span class="material-icons align-middle text-gray-500 -ml-1">place</span>
+                                    Somewhere, Japan
+                                </p>
+                                <div>
+                                    <span
+                                        class="text-xs px-2 py-0 5 bg-amber-100 border border-amber-200 text-amber-700 rounded-full">food</span>
+                                    <span
+                                        class="text-xs px-2 py-0 5 bg-amber-100 border border-amber-200 text-amber-700 rounded-full">japan</span>
+                                    <span
+                                        class="text-xs px-2 py-0 5 bg-amber-100 border border-amber-200 text-amber-700 rounded-full">culture</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- card -->
+                        <div class="bg-white dark:bg-gray-800 rounded-md shadow max-w-xl overflow-hidden">
+                            <div>
+                                <img src="src/assets/images/fitness-lotte-korea.jpg" alt=""
+                                    class="w-full h-60 object-cover">
+                            </div>
+                            <div class="px-6 py-4 space-y-2">
+                                <!-- stars -->
+                                <div class="flex items-center text-sm">
+                                    <span class="material-icons text-amber-400">grade</span>
+                                    <span class="material-icons text-amber-400">grade</span>
+                                    <span class="material-icons text-amber-400">grade</span>
+                                    <span class="material-icons text-amber-400">grade</span>
+                                    <span class="material-icons text-amber-400">star_half</span>
+                                    <span class="ml-2 text-xs text-gray-600 dark:text-gray-100">890 reviews</span>
+                                </div>
+                                <p class="text-lg font-bold text-gray-600 dark:text-gray-100">
+                                    Lotte Mall
+                                </p>
+                                <p class="text-sm text-gray-600 dark:text-gray-100">
+                                    <span class="material-icons align-middle text-gray-500 -ml-1">place</span>
+                                    South Korea
+                                </p>
+                                <div>
+                                    <span
+                                        class="text-xs px-2 py-0 5 bg-amber-100 border border-amber-200 text-amber-700 rounded-full">fitness_center</span>
+                                    <span
+                                        class="text-xs px-2 py-0 5 bg-amber-100 border border-amber-200 text-amber-700 rounded-full">south_korea</span>
+                                    <span
+                                        class="text-xs px-2 py-0 5 bg-amber-100 border border-amber-200 text-amber-700 rounded-full">health</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- card -->
+                        <div class="bg-white dark:bg-gray-800 rounded-md shadow max-w-xl overflow-hidden">
+                            <div>
+                                <img src="src/assets/images/ewha-university.jpg" alt=""
+                                    class="w-full h-60 object-cover">
+                            </div>
+                            <div class="px-6 py-4 space-y-2">
+                                <!-- stars -->
+                                <div class="flex items-center text-sm">
+                                    <span class="material-icons text-amber-400">grade</span>
+                                    <span class="material-icons text-amber-400">grade</span>
+                                    <span class="material-icons text-amber-400">grade</span>
+                                    <span class="material-icons text-amber-400">grade</span>
+                                    <span class="material-icons text-amber-400">star_half</span>
+                                    <span class="ml-2 text-xs text-gray-600 dark:text-gray-100">2900 reviews</span>
+                                </div>
+                                <p class="text-lg font-bold text-gray-600 dark:text-gray-100">
+                                    Ewha Woman University
+                                </p>
+                                <p class="text-sm text-gray-600 dark:text-gray-100">
+                                    <span class="material-icons align-middle text-gray-500 -ml-1">place</span>
+                                    South Korea
+                                </p>
+                                <div>
+                                    <span
+                                        class="text-xs px-2 py-0 5 bg-amber-100 border border-amber-200 text-amber-700 rounded-full">school</span>
+                                    <span
+                                        class="text-xs px-2 py-0 5 bg-amber-100 border border-amber-200 text-amber-700 rounded-full">south_korea</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- card -->
+                        <div class="bg-white dark:bg-gray-800 rounded-md shadow max-w-xl overflow-hidden">
+                            <div>
+                                <img src="src/assets/images/hospital-canada.jpg" alt=""
+                                    class="w-full h-60 object-cover">
+                            </div>
+                            <div class="px-6 py-4 space-y-2">
+                                <!-- stars -->
+                                <div class="flex items-center text-sm">
+                                    <span class="material-icons text-amber-400">grade</span>
+                                    <span class="material-icons text-amber-400">grade</span>
+                                    <span class="material-icons text-amber-400">grade</span>
+                                    <span class="material-icons text-amber-400">grade</span>
+                                    <span class="material-icons text-amber-400">star_half</span>
+                                    <span class="ml-2 text-xs text-gray-600 dark:text-gray-100">370 reviews</span>
+                                </div>
+                                <p class="text-lg font-bold text-gray-600 dark:text-gray-100">
+                                    Chinook Regional Hospital
+                                </p>
+                                <p class="text-sm text-gray-600 dark:text-gray-100">
+                                    <span class="material-icons align-middle text-gray-500 -ml-1">place</span>
+                                    Canada
+                                </p>
+                                <div>
+                                    <span
+                                        class="text-xs px-2 py-0 5 bg-amber-100 border border-amber-200 text-amber-700 rounded-full">clinic</span>
+                                    <span
+                                        class="text-xs px-2 py-0 5 bg-amber-100 border border-amber-200 text-amber-700 rounded-full">hospital</span>
+                                    <span
+                                        class="text-xs px-2 py-0 5 bg-amber-100 border border-amber-200 text-amber-700 rounded-full">$$$</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- card -->
+                        <div class="bg-white dark:bg-gray-800 rounded-md shadow max-w-xl overflow-hidden">
+                            <div>
+                                <img src="src/assets/images/korona-mall.jpg" alt="" class="w-full h-60 object-cover">
+                            </div>
+                            <div class="px-6 py-4 space-y-2">
+                                <!-- stars -->
+                                <div class="flex items-center text-sm">
+                                    <span class="material-icons text-amber-400">grade</span>
+                                    <span class="material-icons text-amber-400">grade</span>
+                                    <span class="material-icons text-amber-400">grade</span>
+                                    <span class="material-icons text-amber-400">grade</span>
+                                    <span class="material-icons text-amber-400">star_half</span>
+                                    <span class="ml-2 text-xs text-gray-600 dark:text-gray-100">3082 reviews</span>
+                                </div>
+                                <p class="text-lg font-bold text-gray-600 dark:text-gray-100">
+                                    Korona Mall
+                                </p>
+                                <p class="text-sm text-gray-600 dark:text-gray-100">
+                                    <span class="material-icons align-middle text-gray-500 -ml-1">place</span>
+                                    Poland
+                                </p>
+                                <div>
+                                    <span
+                                        class="text-xs px-2 py-0 5 bg-amber-100 border border-amber-200 text-amber-700 rounded-full">shopping</span>
+                                    <span
+                                        class="text-xs px-2 py-0 5 bg-amber-100 border border-amber-200 text-amber-700 rounded-full">food</span>
+                                    <span
+                                        class="text-xs px-2 py-0 5 bg-amber-100 border border-amber-200 text-amber-700 rounded-full">entertaiment</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- card -->
+                        <div class="bg-white dark:bg-gray-800 rounded-md shadow max-w-xl overflow-hidden">
+                            <div>
+                                <img src="src/assets/images/cafe-southafrica.jpg" alt=""
+                                    class="w-full h-60 object-cover">
+                            </div>
+                            <div class="px-6 py-4 space-y-2">
+                                <!-- stars -->
+                                <div class="flex items-center text-sm">
+                                    <span class="material-icons text-amber-400">grade</span>
+                                    <span class="material-icons text-amber-400">grade</span>
+                                    <span class="material-icons text-amber-400">grade</span>
+                                    <span class="material-icons text-amber-400">grade</span>
+                                    <span class="material-icons text-amber-400">star_half</span>
+                                    <span class="ml-2 text-xs text-gray-600 dark:text-gray-100">110 reviews</span>
+                                </div>
+                                <p class="text-lg font-bold text-gray-600 dark:text-gray-100">
+                                    Stir Coffee Co
+                                </p>
+                                <p class="text-sm text-gray-600 dark:text-gray-100">
+                                    <span class="material-icons align-middle text-gray-500 -ml-1">place</span>
+                                    South Africa
+                                </p>
+                                <div>
+                                    <span
+                                        class="text-xs px-2 py-0 5 bg-amber-100 border border-amber-200 text-amber-700 rounded-full">coffee</span>
+                                    <span
+                                        class="text-xs px-2 py-0 5 bg-amber-100 border border-amber-200 text-amber-700 rounded-full">chill</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-12 text-center">
+                        <button
+                            class="rounded-md py-2.5 px-6 bg-white dark:bg-gray-800 border border-gray-100 text-lg shadow hover:shadow-lg text-gray-600 dark:text-gray-100">Discover
+                            more <span class="material-icons align-middle">
+                                more_horiz
+                            </span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- discover by categories -->
+        <div class="bg-sky-50 dark:bg-gray-800 py-32">
+            <div class="w-10/12 md:w-8/12 mx-auto">
+                <div class="text-center mb-12">
+                    <p class="text-4xl font-bold text-gray-600 dark:text-gray-100">Discover by Categories</p>
+                    <p class="text-gray-600 dark:text-gray-100">Discover Place by Categories</p>
+                </div>
+                <div>
+                    <div class="grid grid-col-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 place-items-center gap-10">
+                        <a href="#" class="p-4 bg-white dark:border dark:border-gray-700 dark:bg-gray-500 w-48 shadow hover:shadow-lg space-y-5 rounded-lg">
+                            <img src="src/assets/images/icons/coffee-cup.png" class="w-20 h-20 mx-auto" alt="">
+                            <div class="space-y-2 text-center">
+                                <p class="text-gray-700 dark:text-gray-100 text-lg font-semibold mb-3">Coffee & Tea</p>
+                            </div>
+                        </a>
+                        <a href="#" class="p-4 bg-white dark:border dark:border-gray-700 dark:bg-gray-500 w-48 shadow hover:shadow-lg space-y-5 rounded-lg">
+                            <img src="src/assets/images/icons/hospital.png" class="w-20 h-20 mx-auto" alt="">
+                            <div class="space-y-2 text-center">
+                                <p class="text-gray-700 dark:text-gray-100 text-lg font-semibold mb-3">Health & Medical</p>
+                            </div>
+                        </a>
+                        <a href="#" class="p-4 bg-white dark:border dark:border-gray-700 dark:bg-gray-500 w-48 shadow hover:shadow-lg space-y-5 rounded-lg">
+                            <img src="src/assets/images/icons/video.png" class="w-20 h-20 mx-auto" alt="">
+                            <div class="space-y-2 text-center">
+                                <p class="text-gray-700 dark:text-gray-100 text-lg font-semibold mb-3">Entertaiment</p>
+                            </div>
+                        </a>
+                        <a href="#" class="p-4 bg-white dark:border dark:border-gray-700 dark:bg-gray-500 w-48 shadow hover:shadow-lg space-y-5 rounded-lg">
+                            <img src="src/assets/images/icons/education.png" class="w-20 h-20 mx-auto" alt="">
+                            <div class="space-y-2 text-center">
+                                <p class="text-gray-700 dark:text-gray-100 text-lg font-semibold mb-3">Education</p>
+                            </div>
+                        </a>
+                        <a href="#" class="p-4 bg-white dark:border dark:border-gray-700 dark:bg-gray-500 w-48 shadow hover:shadow-lg space-y-5 rounded-lg">
+                            <img src="src/assets/images/icons/traffic-jam.png" class="w-20 h-20 mx-auto" alt="">
+                            <div class="space-y-2 text-center">
+                                <p class="text-gray-700 dark:text-gray-100 text-lg font-semibold mb-3">Traffic</p>
+                            </div>
+                        </a>
+                        <a href="#" class="p-4 bg-white dark:border dark:border-gray-700 dark:bg-gray-500 w-48 shadow hover:shadow-lg space-y-5 rounded-lg">
+                            <img src="src/assets/images/icons/shopping-bag.png" class="w-20 h-20 mx-auto" alt="">
+                            <div class="space-y-2 text-center">
+                                <p class="text-gray-700 dark:text-gray-100 text-lg font-semibold mb-3">Shopping</p>
+                            </div>
+                        </a>
+                        <a href="#" class="p-4 bg-white dark:border dark:border-gray-700 dark:bg-gray-500 w-48 shadow hover:shadow-lg space-y-5 rounded-lg">
+                            <img src="src/assets/images/icons/hotel.png" class="w-20 h-20 mx-auto" alt="">
+                            <div class="space-y-2 text-center">
+                                <p class="text-gray-700 dark:text-gray-100 text-lg font-semibold mb-3">Hotel</p>
+                            </div>
+                        </a>
+                        <a href="#" class="p-4 bg-white dark:border dark:border-gray-700 dark:bg-gray-500 w-48 shadow hover:shadow-lg space-y-5 rounded-lg">
+                            <img src="src/assets/images/icons/home.png" class="w-20 h-20 mx-auto" alt="">
+                            <div class="space-y-2 text-center">
+                                <p class="text-gray-700 dark:text-gray-100 text-lg font-semibold mb-3">Home Service</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="mt-12 text-center">
+                        <button
+                            class="rounded-md py-2.5 px-6 bg-white dark:bg-gray-800 border border-gray-100 text-lg shadow hover:shadow-lg text-gray-600 dark:text-gray-100">Discover
+                            more <span class="material-icons align-middle">
+                                more_horiz
+                            </span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- collections -->
+        <div class="bg-slate-100 dark:bg-gray-800 py-32">
+            <div class="w-10/12 md:w-8/12 mx-auto">
+                <div class="text-center mb-12">
+                    <p class="text-4xl font-bold text-gray-600 dark:text-gray-100 mb-3">Collections</p>
+                    <p class="text-gray-600 dark:text-gray-100">Discover List of Top Place By Collection</p>
+                </div>
+                <div>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-10 place-items-center">
+                        <div class="relative w-56 h-64 overflow-hidden shadow-md hover:shadow-lg">
+                            <img src="src/assets/images/collections/1.jpg" alt=""
+                                class="rounded w-full h-full object-cover shadow">
+                            <div class="bg-gradient-to-t from-black via-transparent inset-0 absolute rounded"></div>
+                            <div class="absolute bottom-2 left-3">
+                                <p class="text-white text-lg font-semibold">Newly Opened</p>
+                                <p class="text-white text-sm">32 Places</p>
+                            </div>
+                        </div>
+                        <div class="relative w-56 h-64 overflow-hidden shadow-md hover:shadow-lg">
+                            <img src="src/assets/images/collections/2.jpg" alt=""
+                                class="rounded w-full h-full object-cover shadow">
+                            <div class="bg-gradient-to-t from-black via-transparent inset-0 absolute rounded"></div>
+                            <div class="absolute bottom-2 left-3">
+                                <p class="text-white text-lg font-semibold">Traditional Restaurants</p>
+                                <p class="text-white text-sm">32 Places</p>
+                            </div>
+                        </div>
+                        <div class="relative w-56 h-64 overflow-hidden shadow-md hover:shadow-lg">
+                            <img src="src/assets/images/collections/3.jpg" alt=""
+                                class="rounded w-full h-full object-cover shadow">
+                            <div class="bg-gradient-to-t from-black via-transparent inset-0 absolute rounded"></div>
+                            <div class="absolute bottom-2 left-3">
+                                <p class="text-white text-lg font-semibold">Trending This Week</p>
+                                <p class="text-white text-sm">32 Places</p>
+                            </div>
+                        </div>
+                        <div class="relative w-56 h-64 overflow-hidden shadow-md hover:shadow-lg">
+                            <img src="src/assets/images/collections/4.jpg" alt=""
+                                class="rounded w-full h-full object-cover shadow">
+                            <div class="bg-gradient-to-t from-black via-transparent inset-0 absolute rounded"></div>
+                            <div class="absolute bottom-2 left-3">
+                                <p class="text-white text-lg font-semibold">Luxury Houses</p>
+                                <p class="text-white text-sm">32 Places</p>
+                            </div>
+                        </div>
+                        <div class="relative w-56 h-64 overflow-hidden shadow-md hover:shadow-lg">
+                            <img src="src/assets/images/collections/5.jpg" alt=""
+                                class="rounded w-full h-full object-cover shadow">
+                            <div class="bg-gradient-to-t from-black via-transparent inset-0 absolute rounded"></div>
+                            <div class="absolute bottom-2 left-3">
+                                <p class="text-white text-lg font-semibold">Cheap In Town</p>
+                                <p class="text-white text-sm">32 Places</p>
+                            </div>
+                        </div>
+                        <div class="relative w-56 h-64 overflow-hidden shadow-md hover:shadow-lg">
+                            <img src="src/assets/images/collections/6.jpg" alt=""
+                                class="rounded w-full h-full object-cover shadow">
+                            <div class="bg-gradient-to-t from-black via-transparent inset-0 absolute rounded"></div>
+                            <div class="absolute bottom-2 left-3">
+                                <p class="text-white text-lg font-semibold">Asian Foods</p>
+                                <p class="text-white text-sm">32 Places</p>
+                            </div>
+                        </div>
+                        <div class="relative w-56 h-64 overflow-hidden shadow-md hover:shadow-lg">
+                            <img src="src/assets/images/collections/7.jpg" alt=""
+                                class="rounded w-full h-full object-cover shadow">
+                            <div class="bg-gradient-to-t from-black via-transparent inset-0 absolute rounded"></div>
+                            <div class="absolute bottom-2 left-3">
+                                <p class="text-white text-lg font-semibold">Resort</p>
+                                <p class="text-white text-sm">32 Places</p>
+                            </div>
+                        </div>
+                        <div class="relative w-56 h-64 overflow-hidden shadow-md hover:shadow-lg">
+                            <img src="src/assets/images/collections/8.jpg" alt=""
+                                class="rounded w-full h-full object-cover shadow">
+                            <div class="bg-gradient-to-t from-black via-transparent inset-0 absolute rounded"></div>
+                            <div class="absolute bottom-2 left-3">
+                                <p class="text-white text-lg font-semibold">Souvenir</p>
+                                <p class="text-white text-sm">32 Places</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-12 text-center">
+                    <button
+                        class="rounded-md py-2.5 px-6 bg-white dark:bg-gray-800 border border-gray-100 text-lg shadow hover:shadow-lg text-gray-600 dark:text-gray-100">Discover
+                        more <span class="material-icons align-middle">
+                            more_horiz
+                        </span></button>
+                </div>
+            </div>
+        </div>
+        <!-- Teams -->
+        <div class="bg-gray-50 dark:bg-gray-800 py-36 relative">
+            <div class="w-8/12 lg:w-10/12 xl:w-8/12 mx-auto">
+                <div class="flex flex-col lg:flex-row items-center gap-12">
+                    <div class="w-full lg:w-1/2 mb-12 lg:mb-0">
+                        <div class="hidden lg:inline pattern w-1/2 h-full absolute top-0 left-0 bottom-0 opacity-40"></div>
+                        <div class="hidden lg:inline w-1/2 bg-gradient-to-l dark:from-gray-800 from-gray-50 via-transparent absolute top-0 left-0 bottom-0 h-full"></div>
+                        <div class="flex justify-center gap-12">
+                            <div class="flex flex-col gap-12">
+                                <div class="relative">
+                                    <img src="src/assets/images/team/1.jpg" alt="" class="w-48 h-60 lg:h-52 xl:h-60 object-cover rounded-md shadow-md">
+                                    <div
+                                        class="bg-gradient-to-t from-black via-transparent absolute inset-0 rounded-md">
+                                    </div>
+                                    <div class="absolute bottom-2 left-3 text-white text-sm">
+                                        <p class="font-semibold">Fate Foo</p>
+                                        <p>CEO</p>
+                                    </div>
+                                </div>
+                                <div class="relative">
+                                    <img src="src/assets/images/team/2.jpg" alt="" class="w-48 h-60 lg:h-52 xl:h-60 object-cover rounded-md shadow-md">
+                                    <div
+                                        class="bg-gradient-to-t from-black via-transparent absolute inset-0 rounded-md">
+                                    </div>
+                                    <div class="absolute bottom-2 left-3 text-white text-sm">
+                                        <p class="font-semibold">Fate Foo</p>
+                                        <p>CEO</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex flex-col gap-12 mt-12">
+                                <div class="relative">
+                                    <img src="src/assets/images/team/3.jpg" alt="" class="w-48 h-60 lg:h-52 xl:h-60  object-cover rounded-md shadow-md">
+                                    <div
+                                        class="bg-gradient-to-t from-black via-transparent absolute inset-0 rounded-md">
+                                    </div>
+                                    <div class="absolute bottom-2 left-3 text-white text-sm">
+                                        <p class="font-semibold">Fate Foo</p>
+                                        <p>CEO</p>
+                                    </div>
+                                </div>
+                                <div class="relative">
+                                    <img src="src/assets/images/team/4.jpg" alt="" class="w-48 h-60 lg:h-52 xl:h-60 object-cover rounded-md shadow-md">
+                                    <div
+                                        class="bg-gradient-to-t from-black via-transparent absolute inset-0 rounded-md">
+                                    </div>
+                                    <div class="absolute bottom-2 left-3 text-white text-sm">
+                                        <p class="font-semibold">Fate Foo</p>
+                                        <p>CEO</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-1/2">
+                        <p class="text-sm font-bold uppercase text-indigo-500 mb-1">
+                            Our Support Heroes
+                        </p>
+                        <p class="text-4xl font-bold">Meet The Team</p>
+                        <p class="mt-3 text-gray-500 text-lg">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem corporis iusto necessitatibus praesentium ipsum tenetur ea cupiditate, ad natus quae quisquam, earum laboriosam sit eaque cum doloremque blanditiis deserunt accusantium.
+                        </p>
+                        <div class="mt-5">
+                            <button class="mr-4 py-2 px-3 border-2 border-gray-500 font-semibold text-gray-500 shadow-md hover:bg-gray-500 hover:text-white rounded-full">
+                                <span class="material-icons align-middle mr-1">people_alt</span>
+                                Meet Us
+                            </button>
+                            <button class="mr-4 py-2 px-3 border-2 bg-blue-400 text-white border-blue-400 font-semibold shadow-md hover:bg-blue-500 rounded-full">
+                                <span class="material-icons align-middle mr-1">lightbulb</span>
+                                Learn More
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Testimonials -->
+        <div class="bg-gray-50 dark:bg-gray-800 py-36 relative z-10">
+            <div class="-z-10 w-8/12 bg-slate-50 dark:bg-slate-800 dark:border dark:shadow-md dark:border-gray-700 absolute bottom-0 right-0 top-16 rounded-tl-3xl"></div>
+            <div class="w-8/12 lg:w-10/12 xl:w-8/12 mx-auto">
+                <div class="mb-20">
+                    <p class="text-3xl md:text-4xl font-bold font-libre text-gray-600 dark:text-gray-100 w-5/12">What Our Customers Are Saying</p>
+                </div>
+                <div class="flex flex-col lg:flex-row">
+                    <div class="w-full lg:w-1/2 mb-6 lg:mb-0">
+                        <div class="w-10/12 h-72 relative mb-6">
+                            <div class="fancy opacity-60 h-48 w-32 absolute -top-24 -left-16 -z-10"></div>
+                            <div class="fancy opacity-60 h-48 w-32 absolute -bottom-24 -right-16 -z-10"></div>
+                            <div class="absolute z-10 -top-6 -right-6">
+                                <div class="bg-indigo-500 h-16 w-16 rounded-full flex items-center justify-center">
+                                    <span class="material-icons">format_quote</span>
+                                </div>
+                            </div>
+                            <img src="src/assets/images/testimonials/humphrey-muleba-9MoQKZW0nGU-unsplash.jpg" alt="" class="w-full h-full object-cover rounded-md shadow-md">
+                        </div>
+                        <div class="flex gap-3">
+                            <button class="flex items-center justify-center h-10 w-10 bg-amber-400 text-white shadow-md hover:shadow-xl rounded-full">
+                                <span class="material-icons align-middle text-3xl text-gray-60">chevron_left</span>
+                            </button>
+                            <button class="flex items-center justify-center h-10 w-10 bg-amber-400 text-white shadow-md hover:shadow-xl rounded-full">
+                                <span class="material-icons align-middle text-3xl text-gray-60">chevron_right</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="w-full lg:w-1/2 text-gray-600 dark:text-gray-100">
+                        <p class="text-xl font-semibold capitalize mb-3">
+                            help us improve our productivity
+                        </p>
+                        <p class="mb-6">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Et beatae dolorum suscipit necessitatibus natus repellat doloremque vero repellendus error, quam ea corrupti autem eos? Officiis error quae necessitatibus laudantium dolor!
+                        </p>
+                        <div class="font-bold text-lg">
+                            <p>Pimtha</p>
+                            <p>Lead Marketing Manager</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Contact Us -->
+        <div class="bg-slate-100 dark:bg-gray-800 lg:py-32">
+            <div class="w-full lg:w-11/12 xl:w-9/12 mx-auto">
+                <div class="shadow-lg rounded-xl relative py-12 px-12 bg-cover bg-center z-10" style="background-image: url('src/assets/images/contact-us/elevate-nYgy58eb9aw-unsplash.jpg');">
+                    <!-- <img class="w-full h-[46rem] object-cover rounded-xl" src="src/assets/images/contact-us/elevate-nYgy58eb9aw-unsplash.jpg" alt=""> -->
+                    <div class="bg-black/70 absolute inset-0 h-full lg:rounded-xl -z-10"></div>
+                    <div class="flex flex-col gap-5 lg:flex-row items-end right-8 left-8 top-24">
+                            <div class="w-full lg:w-1/2 text-gray-100">
+                                <div class="mx-5 ">
+                                    <p class="text-4xl font-bold font-comf mb-5">
+                                        Find Us
+                                    </p>
+                                    <div class="flex gap-6">
+                                        <div class="border-r border-white pr-3">
+                                            <p class="font-bold text-2xl">Shinjuku</p>
+                                            <p class="text-sm">Japan</p>
+                                        </div>
+                                        <div class="border-r border-white pr-3">
+                                            <p class="font-bold text-2xl">New York</p>
+                                            <p class="text-sm">USA</p>
+                                        </div>
+                                        <div class="border-r border-white pr-3">
+                                            <p class="font-bold text-2xl">Ho Chi Minh</p>
+                                            <p class="text-sm">Viet Nam</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-full lg:w-1/2">
+                                <div class="bg-white dark:bg-gray-800 max-w-lg rounded-md shadow p-6 mx-auto lg:ml-auto space-y-6 text-gray-600 dark:text-gray-100">
+                                    <div class="">
+                                        <p class="text-4xl font-bold font-monte mb-4">Get In Touch</p>
+                                        <p class="">Need help or have some feedback for us?</p>
+                                        <p class="">Fill out the form below to contact our team</p>
+                                    </div>
+                                    <form action="" class="space-y-4">
+                                        <div class="flex text-gray-600 dark:text-gray-100 gap-10">
+                                            <div class="">
+                                                <label for="first_name">First Name</label>
+                                                <input placeholder="An" type="text" class="bg-white dark:bg-gray-800 py-2 px-3 w-full text-gray-600 dark:text-gray-100 rounded-md border dark:border-gray-700 mt-0.5" id="first_name">
+                                            </div>
+                                            <div class="">
+                                                <label for="last_name">Last Name</label>
+                                                <input placeholder="Mai" type="text" class="bg-white dark:bg-gray-800 py-2 px-3 w-full text-gray-600 dark:text-gray-100 rounded-md border dark:border-gray-700 mt-0.5" id="last_name">
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <label for="email">Email</label>
+                                            <input type="text" placeholder="maian@gmail.com" class="bg-white dark:bg-gray-800 py-2 px-3 w-full text-gray-600 dark:text-gray-100 rounded-md border dark:border-gray-700 -mt-0.5" id="email">
+                                        </div>
+                                        <div>
+                                            <label for="message">Message</label>
+                                            <textarea name="message" id="message" rows="4" placeholder="Good Job! I only have this question...." class="bg-white dark:bg-gray-800 py-2 px-3 w-full text-gray-600 dark:text-gray-100 rounded-md border dark:border-gray-700 mt-0.5 resize-none"></textarea>
+                                        </div>
+                                        <div>
+                                            <button class="py-2 px-3 rounded-md shadow bg-indigo-600 text-white hover:bg-indigo-500 hover:shadow-xl">
+                                                Get In Touch
+                                            </button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Features -->
+        <div class="bg-slate-50 dark:bg-gray-800 py-36">
+            <div class="w-8/12 lg:w-10/12 xl:w-8/12 mx-auto">
+                <div class="text-center text-gray-600 dark:text-gray-100 mb-12">
+                    <p class="text-4xl font-bold mb-2">Our Valuable Features</p>
+                </div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16 lg:gap-10 xl:gap-16 w-9/12 mx-auto">
+                <div class="dark:hover:bg-transparent border border-transparent dark:hover:border-gray-700 dark:bg-gray-800 group p-4 rounded-md hover:bg-gray-500 hover:shadow-lg">
+                    <button class="text-gray-600 dark:text-gray-100 bg-slate-100 p-2 rounded-md shadow-md">
+                        <img src="src/assets/images/features/1.svg" class="" alt="">
+                    </button>
+                    <p class="group-hover:text-white text-xl font-bold mt-3 mb-2 text-gray-600 dark:text-gray-100">Featured title</p>
+                    <p class="group-hover:text-white text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium hic ab rerum nisi consequuntur illum, libero ad maxime neque aperiam mollitia nulla facere quo maiores ullam labore dicta alias tenetur.</p>
+                </div>
+                <div class="dark:hover:bg-transparent border border-transparent dark:hover:border-gray-700 dark:bg-gray-800 group p-4 rounded-md hover:bg-gray-500 hover:shadow-lg">
+                    <button class="text-gray-600 dark:text-gray-100 bg-slate-100 p-2 rounded-md shadow-md">
+                        <img src="src/assets/images/features/2.svg" class="" alt="">
+                    </button>
+                    <p class="group-hover:text-white text-xl font-bold mt-3 mb-2 text-gray-600 dark:text-gray-100">Featured title</p>
+                    <p class="group-hover:text-white text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium hic ab rerum nisi consequuntur illum, libero ad maxime neque aperiam mollitia nulla facere quo maiores ullam labore dicta alias tenetur.</p>
+                </div>
+                <div class="dark:hover:bg-transparent border border-transparent dark:hover:border-gray-700 dark:bg-gray-800 group p-4 rounded-md hover:bg-gray-500 hover:shadow-lg">
+                    <button class="text-gray-600 dark:text-gray-100 bg-slate-100 p-2 rounded-md shadow-md">
+                        <img src="src/assets/images/features/3.svg" class="" alt="">
+                    </button>
+                    <p class="group-hover:text-white text-xl font-bold mt-3 mb-2 text-gray-600 dark:text-gray-100">Featured title</p>
+                    <p class="group-hover:text-white text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium hic ab rerum nisi consequuntur illum, libero ad maxime neque aperiam mollitia nulla facere quo maiores ullam labore dicta alias tenetur.</p>
+                </div>
+                <div class="dark:hover:bg-transparent border border-transparent dark:hover:border-gray-700 dark:bg-gray-800 group p-4 rounded-md hover:bg-gray-500 hover:shadow-lg">
+                    <button class="text-gray-600 dark:text-gray-100 bg-slate-100 p-2 rounded-md shadow-md">
+                        <img src="src/assets/images/features/4.svg" class="" alt="">
+                    </button>
+                    <p class="group-hover:text-white text-xl font-bold mt-3 mb-2 text-gray-600 dark:text-gray-100">Featured title</p>
+                    <p class="group-hover:text-white text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium hic ab rerum nisi consequuntur illum, libero ad maxime neque aperiam mollitia nulla facere quo maiores ullam labore dicta alias tenetur.</p>
+                </div>
+                <div class="dark:hover:bg-transparent border border-transparent dark:hover:border-gray-700 dark:bg-gray-800 group p-4 rounded-md hover:bg-gray-500 hover:shadow-lg">
+                    <button class="text-gray-600 dark:text-gray-100 bg-slate-100 p-2 rounded-md shadow-md">
+                        <img src="src/assets/images/features/5.svg" class="" alt="">
+                    </button>
+                    <p class="group-hover:text-white text-xl font-bold mt-3 mb-2 text-gray-600 dark:text-gray-100">Featured title</p>
+                    <p class="group-hover:text-white text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium hic ab rerum nisi consequuntur illum, libero ad maxime neque aperiam mollitia nulla facere quo maiores ullam labore dicta alias tenetur.</p>
+                </div>
+                <div class="dark:hover:bg-transparent border border-transparent dark:hover:border-gray-700 dark:bg-gray-800 group p-4 rounded-md hover:bg-gray-500 hover:shadow-lg">
+                    <button class="text-gray-600 dark:text-gray-100 bg-slate-100 p-2 rounded-md shadow-md">
+                        <img src="src/assets/images/features/6.svg" class="" alt="">
+                    </button>
+                    <p class="group-hover:text-white text-xl font-bold mt-3 mb-2 text-gray-600 dark:text-gray-100">Featured title</p>
+                    <p class="group-hover:text-white text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium hic ab rerum nisi consequuntur illum, libero ad maxime neque aperiam mollitia nulla facere quo maiores ullam labore dicta alias tenetur.</p>
+                </div>
+            </div>
+        </div>
+        <!-- blog post -->
+        <div class="bg-slate-50 dark:bg-gray-800 py-28">
+            <div class="w-8/12 lg:w-10/12 xl:w-8/12 mx-auto">
+                <div class="text-center text-gray-600 dark:text-gray-100 mb-12">
+                    <p class="text-4xl font-bold mb-2">Blog Posts</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+                    <div class="dark:border-gray-700 hover:shadow-lg transition-shadow dark:  bg-white dark:bg-gray-800 rounded-md shadow p-5 flex flex-col items-center justify-center gap-5 animate-pulse">
+                        <div class="w-32 h-32 rounded-full bg-gray-200 animate-pulse"></div>
+                        <div class="space-y-2">
+                            <div class="mx-auto w-32 h-6 rounded-full bg-gray-200 shadow-sm animate-pulse"></div>
+                            <div class="space-y-1">
+                                <div class="mx-auto w-52 h-5 rounded-full bg-gray-200 shadow-sm animate-pulse"></div>
+                                <div class="mx-auto w-44 h-5 rounded-full bg-gray-200 shadow-sm animate-pulse"></div>
+                            </div>
+                            <div class="mx-auto w-20 h-6 rounded-full bg-gray-200 shadow-sm animate-pulse"></div>
+                        </div>
+                    </div>
+                    <div class="dark:border-gray-700 hover:shadow-lg transition-shadow dark:  bg-white dark:bg-gray-800 rounded-md shadow p-5 flex flex-col items-center justify-center gap-5 animate-pulse">
+                        <div class="w-32 h-32 rounded-full bg-gray-200 animate-pulse"></div>
+                        <div class="space-y-2">
+                            <div class="mx-auto w-32 h-6 rounded-full bg-gray-200 shadow-sm animate-pulse"></div>
+                            <div class="space-y-1">
+                                <div class="mx-auto w-52 h-5 rounded-full bg-gray-200 shadow-sm animate-pulse"></div>
+                                <div class="mx-auto w-44 h-5 rounded-full bg-gray-200 shadow-sm animate-pulse"></div>
+                            </div>
+                            <div class="mx-auto w-20 h-6 rounded-full bg-gray-200 shadow-sm animate-pulse"></div>
+                        </div>
+                    </div>
+                    <div class="dark:border-gray-700 hover:shadow-lg transition-shadow dark:  bg-white dark:bg-gray-800 rounded-md shadow p-5 flex flex-col items-center justify-center gap-5 animate-pulse">
+                        <div class="w-32 h-32 rounded-full bg-gray-200 animate-pulse"></div>
+                        <div class="space-y-2">
+                            <div class="mx-auto w-32 h-6 rounded-full bg-gray-200 shadow-sm animate-pulse"></div>
+                            <div class="space-y-1">
+                                <div class="mx-auto w-52 h-5 rounded-full bg-gray-200 shadow-sm animate-pulse"></div>
+                                <div class="mx-auto w-44 h-5 rounded-full bg-gray-200 shadow-sm animate-pulse"></div>
+                            </div>
+                            <div class="mx-auto w-20 h-6 rounded-full bg-gray-200 shadow-sm animate-pulse"></div>
+                        </div>
+                    </div>
+                    <div class="dark:border-gray-700 hover:shadow-lg transition-shadow dark:  bg-white dark:bg-gray-800 rounded-md shadow p-5 space-y-3">
+                        <div class="h-44 w-full bg-gray-200 rounded-lg animate-pulse"></div>
+                        <div class="space-y-3">
+                            <div class="w-8/12 h-5 rounded-full shadow bg-gray-200 animate-pulse"></div>
+                            <div class="space-y-1">
+                                <div class="w-full h-5 rounded-full shadow bg-gray-200 animate-pulse"></div>
+                                <div class="w-full h-5 rounded-full shadow bg-gray-200 animate-pulse"></div>
+                                <div class="w-full h-5 rounded-full shadow bg-gray-200 animate-pulse"></div>
+                                <div class="w-full h-5 rounded-full shadow bg-gray-200 animate-pulse"></div>
+                                <div class="w-7/12 h-5 rounded-full shadow bg-gray-200 animate-pulse"></div>
+                            </div>
+                            <div class="flex gap-2">
+                                <div class="w-16 h-5 rounded-full bg-gray-200 shadow animate-pulse"></div>
+                                <div class="w-12 h-5 rounded-full bg-gray-200 shadow animate-pulse"></div>
+                                <div class="w-20 h-5 rounded-full bg-gray-200 shadow animate-pulse"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dark:border-gray-700 hover:shadow-lg transition-shadow dark:  bg-white dark:bg-gray-800 rounded-md shadow p-5 space-y-3">
+                        <div class="h-44 w-full bg-gray-200 rounded-lg animate-pulse"></div>
+                        <div class="space-y-3">
+                            <div class="w-8/12 h-5 rounded-full shadow bg-gray-200 animate-pulse"></div>
+                            <div class="space-y-1">
+                                <div class="w-full h-5 rounded-full shadow bg-gray-200 animate-pulse"></div>
+                                <div class="w-full h-5 rounded-full shadow bg-gray-200 animate-pulse"></div>
+                                <div class="w-full h-5 rounded-full shadow bg-gray-200 animate-pulse"></div>
+                                <div class="w-full h-5 rounded-full shadow bg-gray-200 animate-pulse"></div>
+                                <div class="w-7/12 h-5 rounded-full shadow bg-gray-200 animate-pulse"></div>
+                            </div>
+                            <div class="flex gap-2">
+                                <div class="w-16 h-5 rounded-full bg-gray-200 shadow animate-pulse"></div>
+                                <div class="w-12 h-5 rounded-full bg-gray-200 shadow animate-pulse"></div>
+                                <div class="w-20 h-5 rounded-full bg-gray-200 shadow animate-pulse"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dark:border-gray-700 hover:shadow-lg transition-shadow dark:  bg-white dark:bg-gray-800 rounded-md shadow p-5 space-y-3">
+                        <div class="h-44 w-full bg-gray-200 rounded-lg animate-pulse"></div>
+                        <div class="space-y-3">
+                            <div class="w-8/12 h-5 rounded-full shadow bg-gray-200 animate-pulse"></div>
+                            <div class="space-y-1">
+                                <div class="w-full h-5 rounded-full shadow bg-gray-200 animate-pulse"></div>
+                                <div class="w-full h-5 rounded-full shadow bg-gray-200 animate-pulse"></div>
+                                <div class="w-full h-5 rounded-full shadow bg-gray-200 animate-pulse"></div>
+                                <div class="w-full h-5 rounded-full shadow bg-gray-200 animate-pulse"></div>
+                                <div class="w-7/12 h-5 rounded-full shadow bg-gray-200 animate-pulse"></div>
+                            </div>
+                            <div class="flex gap-2">
+                                <div class="w-16 h-5 rounded-full bg-gray-200 shadow animate-pulse"></div>
+                                <div class="w-12 h-5 rounded-full bg-gray-200 shadow animate-pulse"></div>
+                                <div class="w-20 h-5 rounded-full bg-gray-200 shadow animate-pulse"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer -->
+        <footer class="bg-white dark:bg-gray-800 py-24 border-t dark:border-gray-700">
+            <div class="w-8/12 lg:w-10/12 xl:w-8/12 mx-auto">
+                <div class="flex flex-col lg:flex-row justify-between py-0 lg:py-12 gap-12 lg:gap-0">
+                    <div class="">
+                        <p class="uppercase font-bold mb-2 text-gray-600 dark:text-gray-100">Company</p>
+                        <ul>
+                            <li class="text-gray-600 dark:text-gray-100">Who We Are?</li>
+                            <li class="text-gray-600 dark:text-gray-100">Contact Us</li>
+                            <li class="text-gray-600 dark:text-gray-100">Support</li>
+                        </ul>
+                    </div>
+                    <div class="">
+                        <p class="uppercase font-bold mb-2 text-gray-600 dark:text-gray-100">Company</p>
+                        <ul>
+                            <li class="text-gray-600 dark:text-gray-100">Who We Are?</li>
+                            <li class="text-gray-600 dark:text-gray-100">Contact Us</li>
+                            <li class="text-gray-600 dark:text-gray-100">Support</li>
+                        </ul>
+                    </div>
+                    <div class="">
+                        <p class="uppercase font-bold mb-2 text-gray-600 dark:text-gray-100">Company</p>
+                        <ul>
+                            <li class="text-gray-600 dark:text-gray-100">Who We Are?</li>
+                            <li class="text-gray-600 dark:text-gray-100">Contact Us</li>
+                            <li class="text-gray-600 dark:text-gray-100">Support</li>
+                        </ul>
+                    </div>
+                    <div class="">
+                        <p class="uppercase font-bold mb-2 text-gray-600 dark:text-gray-100">Follow Us</p>
+                        <div class="flex gap-2">
+                            <a href="#"><img src="src/assets/images/icons/fb.png" alt=""></a>
+                            <a href="#"><img src="src/assets/images/icons/ig.png" alt=""></a>
+                            <a href="#"><img src="src/assets/images/icons/tr.png" alt=""></a>
+                            <a href="#"><img src="src/assets/images/icons/tg.png" alt=""></a>
+                        </div>
+                        <div class="mt-10">
+                            <label for="default-toggle" class="inline-flex relative items-center cursor-pointer">
+                                <input type="checkbox" value="" id="default-toggle" class="theme-toggle-btn sr-only peer">
+                                <div class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"></div>
+                                <span class="ml-3 text-sm font-medium text-gray-900 dark:text-gray-300">Dark Mode</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="pt-12">
+                    <p class="text-gray-600 dark:text-gray-100 text-sm">2022 &copy; Cosmos Company. All rights reserverd</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
+<script src="src/assets/js/main.js"></script>
